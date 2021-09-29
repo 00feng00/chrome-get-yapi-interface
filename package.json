@@ -1,5 +1,5 @@
 {
-  "name": "yapi-interface-extension",
+  "name": "chrome-get-yapi-interface",
   "version": "1.2.1",
   "description": "YAPI 浏览器插件，在 YAPI 接口文档显示 TypeScript interface",
   "main": "index.js",
