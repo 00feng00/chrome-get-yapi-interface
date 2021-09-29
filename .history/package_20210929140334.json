@@ -1,0 +1,62 @@
+{
+  "name": "yapi-interface-extension",
+  "version": "1.2.1",
+  "description": "YAPI 浏览器插件，在 YAPI 接口文档显示 TypeScript interface",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=develop esmo build.ts",
+    "build": "cross-env NODE_ENV=production esmo build.ts",
+    "lint": "eslint src --ext .js,.ts --cache --fix",
+    "zip": "zip -q -r yapi-interface-extension.zip dist",
+    "clean": "rm -rf dist",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/00feng00/chrome-get-yapi-interface.git"
+  },
+  "keywords": [
+    "yapi",
+    "yapi-plugin",
+    "interface"
+  ],
+  "author": "molvqingtai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/00feng00/chrome-get-yapi-interface/issues"
+  },
+  "homepage": "https://github.com/00feng00/chrome-get-yapi-interface#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/webextension-polyfill": "^0.8.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.32.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.13.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "esno": "^0.10.0",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.3",
+    "zx": "^4.2.0"
+  },
+  "dependencies": {
+    "@mswjs/interceptors": "^0.12.7",
+    "@types/prismjs": "^1.16.6",
+    "lit": "^2.0.0-rc.4",
+    "prismjs": "^1.25.0",
+    "raw-to-ts": "^0.1.3",
+    "webextension-polyfill": "^0.8.0"
+  }
+}
